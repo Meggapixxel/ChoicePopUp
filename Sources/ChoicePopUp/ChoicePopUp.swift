@@ -31,7 +31,7 @@ public class ChoiceViewController<Element: P_ChoiceItem>: UITableViewController,
         self.preferredContentSize = preferredContentSize
         self.modalPresentationStyle = .popover
         let presentationController = self.presentationController as! UIPopoverPresentationController
-        presentationController.delegate = self//AlwaysPresentAsPopover.shared
+        presentationController.delegate = self
         presentationController.sourceView = sourceView
         presentationController.sourceRect = sourceView.bounds
         presentationController.permittedArrowDirections = [.down, .up]
