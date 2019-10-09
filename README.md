@@ -1,3 +1,3 @@
 # ChoicePopUp
 
-A description of this package.
+Simple UITableViewController always presenting using `UIModalPresentationStyle.popover`
