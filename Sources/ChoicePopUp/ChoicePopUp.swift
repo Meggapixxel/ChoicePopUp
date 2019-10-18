@@ -9,11 +9,11 @@ public class ChoiceViewController<Element: P_ChoiceItem>: UITableViewController,
     public init(
         preferredContentSize: CGSize = CGSize(width: 300, height: 200),
         sourceView: UIView,
-        popupDisplayItems: [Element],
+        elements: [Element],
         selection: Selection<Element>,
         completion: (() -> ())? = nil
     ) {
-        self.elements = popupDisplayItems
+        self.elements = elements
         self.selection = selection
         self.completion = completion
         

@@ -71,7 +71,7 @@ public class FilterChoiceViewController<Element: Filterable>: UITableViewControl
         fatalError("init(coder:) has not been implemented")
     }
     
-    func applyFilter(_ filter: String?) {
+    public func applyFilter(_ filter: String?) {
         _elements.filter = filter
         tableView.reloadData()
     }
